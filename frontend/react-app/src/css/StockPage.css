@@ -1,0 +1,517 @@
+.stock-page-container {
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.stock-page-nav {
+  position: sticky;
+  top: 0px;
+  z-index: 100000;
+}
+
+.stock-page-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 36px;
+}
+
+.first-column {
+  flex: 0 0 66.6666666667%;
+  /* border: solid black 1px; */
+}
+
+.second-column {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 100px;
+  width: 100%;
+  height: 85vh;
+  flex: 0 0 27.7777777778%;
+  /* border: solid black 1px; */
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 401px;
+  /* border: solid black 1px; */
+  z-index: 1;
+}
+
+.stock-transaction-container {
+  width: 273px;
+  height: fit-content;
+  /* height: 538px; */
+}
+
+.stock-transaction {
+  width: 273px;
+  height: fit-content;
+  /* height: 445px; */
+  border: solid #e3e9ed 1px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 25px rgba(185, 185, 185, 0.295);
+}
+
+.add-stock-watchlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 214px;
+  height: 44px;
+  border: solid #00c805 1px;
+  margin: 24px auto;
+  border-radius: 20px;
+  color: #00c805;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-stock-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  height: 100%;
+}
+
+.add-stock-watchlist:hover {
+  background-color: #e4f8e5;
+}
+/* .add-stock-button img{
+    width: 16px;
+    height: 16px;
+    fill: red;
+} */
+
+.transaction-header {
+  max-width: 100%;
+  padding: 4px 24px 0px;
+  height: 47px;
+  max-height: 52px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  border-bottom: solid #e3e9ed 1px;
+  font-size: 15px;
+}
+
+.clicked-transaction-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00c805;
+  border-bottom: solid #00c805 2px;
+  font-weight: 800;
+  cursor: pointer;
+  height: 100%;
+}
+
+.buy-stock-title {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.transaction-form {
+  padding: 12px 24px 0px;
+  font-size: 13px;
+}
+
+.order-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+.buy-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.buy-in select {
+  height: 36px;
+  width: 134px;
+  padding: 1px 1px 0px 12px;
+  cursor: pointer;
+  border: solid #e3e9ed 1px;
+  transition: border-color 300ms ease 0s, box-shadow 300ms ease 0s;
+}
+
+.buy-in select:hover {
+  box-shadow: 0px 0px 25px rgba(185, 185, 185, 0.308);
+}
+
+.share-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+.amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+.market-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+.market-price-text {
+  color: #00c805;
+}
+.transaction-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+.transactions-submit-button {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  padding: 34px 0px 10px;
+}
+.errors {
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  color: red;
+  text-align: center;
+}
+.review-order-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  background-color: #00c805;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  /* padding: 0px 48px; */
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.review-order-button:hover {
+  background-color: #00b306;
+}
+
+input[type="number"]:focus {
+  border: solid #00c805 1px;
+  outline: none;
+}
+select:focus {
+  border: solid #00c805 1px;
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  text-align: end;
+  height: 36px;
+  width: 118px;
+  /* padding: 1px 12px 0px 0px; */
+  padding-right: 12px;
+  appearance: none;
+  border: solid #e3e9ed 1px;
+}
+
+input[type="number"]::placeholder {
+  text-align: end;
+}
+
+.estimated-text {
+  font-weight: 700;
+  min-width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.estimated-price {
+  font-weight: 700;
+}
+.market-price-amount {
+  font-weight: 700;
+}
+.transactions-power {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  font-size: 13px;
+  border-top: solid #e3e9ed 1px;
+}
+
+.transactions-power-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.transactions-power-text-sell {
+  text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  width: 250px;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.success {
+  position: absolute;
+  top: 0;
+  color: #00b306;
+  font-size: 16px;
+}
+
+.sell-all {
+  display: block;
+  width: 10px;
+}
+.sell-all span {
+  cursor: pointer;
+  color: #00c805;
+}
+.sell-all span:hover {
+  text-decoration: underline;
+}
+
+.investment-power {
+  display: block;
+  justify-content: center;
+  /* text-align: end; */
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sell-all-confirmation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  border-top: solid #e3e9ed 1px;
+  padding-top: 10px;
+}
+
+.sell-all-message {
+  width: 200px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.accept-sell-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00c805;
+  color: white;
+  width: 100%;
+  height: 44px;
+  border-radius: 25px;
+  font-weight: 600;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.cancel-sell-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #00c805;
+  border: solid #00c805 2px;
+  width: 100%;
+  height: 44px;
+  border-radius: 25px;
+  font-weight: 600;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.cancel-sell-all:hover {
+  background-color: #e5f9e6;
+}
+.accept-sell-all:hover {
+  background-color: #00b306;
+}
+
+.chart {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -20px;
+  z-index: 1;
+}
+
+.time-interval {
+  position: absolute;
+  padding-right: 12px;
+  gap: 24px;
+  bottom: 20px;
+  display: flex;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.date {
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+.date:hover {
+  color: #00c805;
+}
+
+.selected {
+  border-bottom: solid #00c805 2px;
+  padding-bottom: 12px;
+  color: #00c805;
+  cursor: default;
+}
+
+.stock-chart-container {
+  width: 100%;
+  height: 100%;
+}
+
+.stock-page-chart {
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.about-title{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 44px;
+    padding: 0px 0px 16px;
+    height: 50px;
+    width: 100%;
+    border-top: solid #e3e9ed 1px;
+    border-bottom: solid #e3e9ed 1px;
+}
+
+.stock-description{
+    width: 560px;
+    min-width: 560px;
+    height: fit-content;
+    min-height: 150px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.company-info-container{
+    height: 55px;
+    width: 680px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25%;
+}
+
+.info-title{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.info-name{
+    font-size: 13px;
+}
+
+.key-statistics-container{
+    width: 100%;
+}
+
+.key-statistics-title{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 30px 0px 20px 0px ;
+    border-bottom: solid #e3e9ed 1px;
+}
+
+.key-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.key-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 161px;
+    height: 53px;
+}
+
+.key-info-title{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.key-info-name{
+    font-size: 13px;
+
+}
+
+.main-name{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.stock-page-price{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.negative{
+    color: #FF5000;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.positive{
+    color: #00c805;
+    font-size: 13px;
+    font-weight: 700;
+}

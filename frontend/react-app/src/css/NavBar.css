@@ -1,0 +1,133 @@
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    max-width: 100%;
+    border-bottom: solid black 1px ;
+    padding: 0 24px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.left-nav-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 800px;
+}
+
+.logo-container{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding-right: 10px;
+    border-right: solid black 1px;
+    text-decoration: none;
+}
+
+#splash-logo:visited{
+    text-decoration: none;
+    color: black;
+}
+#splash-logo{
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#splash-logo img {
+    height: 25px;
+}
+
+.nav-links{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.right-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 216px;
+    max-height: 100%;
+    height: 100%;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102px;
+    height: 44px;
+    border: solid black 1px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102px;
+    height: 44px;
+    border: solid black 1px;
+    border-radius: 50px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.signup:visited{
+    text-decoration: none;
+    color: white;
+}
+.login:visited{
+    text-decoration: none;
+    color: black;
+}
+
+#github-logo{
+    width: 35px;
+    height: 35px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.github{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+a {
+    color: unset;
+    text-decoration: unset;
+  }
+

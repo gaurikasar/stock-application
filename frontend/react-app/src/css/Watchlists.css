@@ -1,0 +1,395 @@
+.header-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 51px;
+    border-bottom: solid #E3E9ED 1px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.lists-container{
+    min-width: 305px;
+}
+
+.header-text{
+    margin: 0px 28px 0px 24px ;
+}
+
+.list-header{
+    border-top: solid #E3E9ED 1px;
+}
+
+.watchlist-header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 310px;
+    width: 100%;
+    height: 60px;
+
+    cursor: pointer;
+
+}
+.watchlist-header:hover{
+    background-color: #F5F8FA;
+    /* border-bottom: solid #E3E9ED 1px; */
+}
+.watchlist-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 28px;
+    font-size: 13px;
+
+}
+
+.bulb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    background-color: #F5F8FA;
+    margin-right: 10px;
+}
+
+.watchlist-name img{
+    width: 18px;
+    height: 18px;
+}
+
+.watchlist-buttons{
+    display: flex;
+    justify-content: flex-end;
+    width: 80px;
+    height: 24px;
+}
+
+/* .watchlist_buttons:hover{
+    justify-content: space-between;
+} */
+
+.watchlist-edit-button{
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.watchlist-edit-button img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.watchlist-edit-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: none;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.watchlist-edit-button button:hover{
+    background-color: #F2F2F2;
+
+}
+
+.watchlist-arrow{
+    height: 16px;
+    width: 16px;
+    margin-right: 24px;
+}
+
+.watchlist-arrow img{
+    /* display: flex;
+    justify-content: center; */
+    width: 16px;
+    height: 16px;
+
+}
+
+.stocks{
+    font-weight: 700;
+    width: 90px;
+}
+.add-watchlist-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 101px;
+    /* min-height: 101px; */
+    overflow-y: hidden;
+    /* padding: 8px 24px 8px 18px; */
+}
+.buttons-add{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    gap: 15px;
+}
+
+input[name="input"]{
+    width: 100%;
+    max-width: 200px;
+    height: 36px;
+}
+
+.bulb img{
+    width: 18px;
+    height: 18px;
+}
+.watchlist-form{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding-left: 28px;
+    width: 303px;
+    height: 100%;
+}
+
+.add-watchlist-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.cancel-add-list{
+    cursor: pointer;
+    font-size: 13px;
+    background-color: white;
+    border: solid #00C805 2px;
+    color: #00C805;
+    padding: 5px 25px;
+    border-radius: 25px;
+
+}
+
+.cancel-add-list:hover{
+    background-color: #2cc53198;
+    color:white;
+}
+
+.add-list-submit{
+    cursor: pointer;
+    font-size: 13px;
+    background-color: #00C805;
+    border: solid #00C805 2px;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 25px;
+
+}
+.bulb-container{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 24px;
+    height: 100%;
+}
+.add-list-submit:hover{
+    background-color: #00af06;
+    color:white;
+}
+
+.add-watchlist-button:hover{
+    background-color: #F2F2F2;
+}
+
+.add-watchlist-button img{
+    width: 16px;
+    height: 16px;
+}
+
+.edit-dropdown{
+    position: absolute;
+    top: 60px;
+    left: 25%;
+    width: 200px;
+    height: fit-content;
+    border: solid black 1px;
+    background-color: white;
+    z-index: 100;
+}
+
+.edit-list{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid gray 1px;
+}
+
+.delete-list{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.edit-list:hover,
+.delete-list:hover
+{
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+
+
+.stock-links{
+    text-decoration: none;
+    color: black;
+}
+
+.stock-links:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.user-stock-header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+
+    /* border: solid black 1px; */
+    cursor: pointer;
+}
+.user-stock-header:hover{
+    background-color: #F5F8FA;
+}
+
+.user-stock-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 80px;
+    align-items: center;
+    margin-left: 28px;
+    font-size: 13px;
+}
+
+.user-stock-name{
+    width: 100%;
+    text-align: start;
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+
+.user-stock-price-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 13px;
+    padding-right: 24px;
+}
+
+/* .stock-chart-container{
+    width: 100%;
+    height: 100%;
+} */
+
+.user-stock-shares{
+    display: flex;
+    min-width: 70px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.watchlist-price{
+    font-size: 13px;
+    margin-right: 24px;
+}
+
+
+.home-stocks-chart-container{
+    margin-right: 50px;
+}
+
+.delete-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 408px;
+}
+
+.delete-title{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.delete-list-submit{
+    cursor: pointer;
+    font-size: 13px;
+    background-color: rgb(235, 3, 3);
+    border: none;
+    margin-top: 24px;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 25px;
+}
+
+.delete-list-submit:hover{
+    background-color: rgb(211, 3, 3);
+}
+
+.edit-form-container{
+    width: 468px;
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+input[name="edit"]{
+    width: 330px;
+    height: 36px;
+
+}
+
+.edit-title{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 24px 24px ;
+}
+.edit-list-form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.edit-list-submit .edit{
+    margin-left: 24px;
+    margin-top: 24px;
+
+}
+
+.bulb-input-container{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button-edit{
+    width: 330;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
