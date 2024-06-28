@@ -1,4 +1,4 @@
-# SellScalehood - A Stock buying and selling platform
+# Robinhood clone - A Stock buying and selling platform
 # Features 
 1. Login & Signup
 2. Stock Dashboard 
